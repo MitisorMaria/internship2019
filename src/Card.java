@@ -63,7 +63,7 @@ public class Card {
 
 
     public int withdraw (int sum){
-        if ((sum + fee * sum)<=limit)
+        if (sum<=limit)
         {
             availableSum -= (sum + fee*sum);
             return sum;
